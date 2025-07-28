@@ -3,97 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise 2</title>
-  <style>
-     table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-}
-  </style>
+  <title>Exercise 3</title>
 </head>
 <body>
-  <h2>Timetable IT-1</h2>
-  <table>
-     <tr>
-      <th>Period</th>
-      <th>Time</th>
-      <th>Monday</th>
-      <th>Tueday</th>
-      <th>Wednesday</th>
-      <th>Thursday</th>
-      <th>Friday</th>
-      <th>Saturday</th>
-    </tr>
-    <tr>
-      <td>I</td>
-      <td>9.10 To 10.10AM</td>
-      <td>EAD Lab(B1)/CN Lab(B2)</td>
-      <td>ML Lab(B1)/CT Lab(B2)</td>
-      <td>PE-2</td>
-      <td>FLAT</td>
-      <td>SE</td>
-      <td>Mentoring</td>
-    </tr>
-    <tr>
-      <td>II</td>
-      <td>10.10 To 11.10AM</td>
-       <td>EAD Lab(B1)/CN Lab(B2)</td>
-      <td>ML Lab(B1)/CT Lab(B2)</td>
-      <td>EAD</td>
-      <td>CN</td>
-      <td>LIBRARY</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>III</td>
-      <td>11.15 To 12.15AM</td>
-      <td>FLAT</td>
-      <td>EAD</td>
-      <td>EAD Lab(B2)/CN Lab(B1)</td>
-      <td>ML Lab(B2)/CT Lab(B1)</td>
-      <td>Sports</td>
-      <td></td>
-     <tr>
-      <td></td>
-      <td>12:15 To 1:00AM</td>
-      <td colspan="5"><b>Lunch Break</b></td>
-    </tr>
-    </tr>
-      <tr>
-      <td>IV</td>
-      <td>1.00 To 2.00AM</td>
-      <td>ML</td>
-      <td>CN</td>
-      <td>EAD Lab(B2)/CN Lab(B1)</td>
-      <td>ML Lab(B2)/CT Lab(B1)</td>
-      <td>PE-2</td>
-      <td></td>
-    </tr>
-      <tr>
-      <td>V</td>
-      <td>2.00 To 3.00AM</td>
-      <td>PE-2</td>
-      <td>CC LAB</td>
-      <td>SE</td>
-      <td>ML</td>
-      <td>FLAT</td>
-      <td></td>
-    </tr>
-      <tr>
-      <td>VI</td>
-      <td>3.05 To 4.05AM</td>
-      <td>SE</td>
-      <td>CC LAB</td>
-      <td>ML</td>
-      <td>EAD</td>
-      <td>CN</td>
-      <td></td>
-    </tr>
-
-
-   
-    
-   </table>
+  <form action="/action_page.php">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="feedback">Feedback:</label><br>
+    <textarea type="feedback" name="feedbackMessage" rows="2" cols="40" style="resize: none"></textarea><br>
+    <label>How satisfied are you?</label><br>
+    <input type="radio" name="satisfaction"> Satisfied
+    <input type="radio" name="satisfaction"> Neutral
+    <input type="radio" name="satisfaction"> Unsatisfied<br><br>
+    <input type="submit" value="Submit">
+  </form>
 </body>
 </html>
